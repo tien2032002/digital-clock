@@ -1,0 +1,19 @@
+!SESSION 2022-09-28 08:38:58.764 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  C:\Users\Administrator\Documents\GitHub\digital-clock\digital clock\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\Administrator\Documents\GitHub\digital-clock\digital clock\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-09-28 08:39:20.362
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-09-28 08:39:20.433
+!MESSAGE Log4j initialized with config file C:\Users\Administrator\Documents\GitHub\digital-clock\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-09-28 08:39:23.447
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-09-28 08:39:27.369
+!MESSAGE Indexed 'digital clock' (19 sources, 96 headers) in 2,14 sec: 6.774 declarations; 19.994 references; 6 unresolved inclusions; 268 syntax errors; 915 unresolved names (3,3%)
