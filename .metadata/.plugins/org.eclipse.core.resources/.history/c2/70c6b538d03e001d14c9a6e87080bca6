@@ -60,6 +60,7 @@ void clearNumberOnClock(int);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 void testLed(int counter) {
+	  if (counter>=12) counter=0; //reset counter
 	  if (counter==0) HAL_GPIO_WritePin(c0_GPIO_Port, c0_Pin, GPIO_PIN_SET);
 	  else HAL_GPIO_WritePin(c0_GPIO_Port, c0_Pin, GPIO_PIN_RESET);
 
@@ -182,7 +183,7 @@ int main(void)
   int counter=1;
   while (1)
   {
-	  if (counter>=12) counter=0;
+	  if (counter>12) counter=0;
 	 testLed(counter);
 	 counter++;
 	 HAL_Delay(1000);
