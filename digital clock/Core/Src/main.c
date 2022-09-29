@@ -153,7 +153,7 @@ void clearNumberOnClock(int counter) {
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	int s=-1, m=0, h=0;
+	int second=-1, minutes=0, hour=0;
 
   /* USER CODE END 1 */
 
@@ -183,20 +183,26 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  s++;
-	  if (s>=60) {
-		  s=0;
-		  m++;
+	  //update clock
+	  second++;
+	  if (second>=60) {
+		  second=0;
+		  minutes++;
 	  }
-	  if (m>=60) {
-		  m=0;
-		  h++;
+	  if (minutes>=60) {
+		  minutes=0;
+		  hour++;
 	  }
-	  if (h>=12) h=0;
+	  if (hour>=12) hour=0;
+
+	  //clear all led
 	  clearAllClock();
-	  setNumberOnClock(s/5);
-	  setNumberOnClock(m/5);
-	  setNumberOnClock(h);
+	  // set number dung voi thoi diem hien tai
+	  setNumberOnClock(second/5);
+	  setNumberOnClock(minutes/5);
+	  setNumberOnClock(hour);
+
+	  //set delay
 	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 
